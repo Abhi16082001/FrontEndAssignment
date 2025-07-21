@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="This is Assignment 1 for CSS Assignment">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+
+body{
+    background-image: url(../img/bulbasaur.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+form{
+    width: 50%;
+    height: 380px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: aliceblue;
+    padding-top: 10px;
+    
+}
+h1{
+    margin-bottom: 5px;
+    margin-top: 50px;
+}
+.div1 input,.div2 input, select{
+    padding: 10px;
+    border: solid 1px black;
+    border-radius: 3px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 12px 5px;
+    
+}
+.div1{
+    width: 55%;
+    margin: 10px;
+    margin-left: 15px;
+    
+}
+.div2{
+    position: relative;
+    bottom: 59px;
+    width: 35%;
+    margin: 10px;
+    
+}
+form div{
+    display: inline-block;
+}
+.div3{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.div3 div{
+margin: 5px 13px;
+}
+.div3 div input{
+    width: 17px;
+    height: 17px;
+    accent-color: lightblue;  
+    
+}
+.div2 label{
+    position: relative;
+    font-size: small;
+    top:10px;
+    left:50px;
+}
+button{
+    margin:10px 15px;
+    padding: 7px 40px;
+    border-radius: 4px;
+    border: none;
+    background-color: orange;
+    color: white;
+    font-weight: bolder;
+}
+.info{
+       width: 50%;
+    margin: auto;
+    margin-top: 10px;
+    background-color: aliceblue;
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 30px;
+  color: red;
+  font-weight: bolder;
+}
+      </style>
+    </head>
+    <body>
+        <div>
+            <form action="">
+                <h1 align="center">BOOK TICKET</h1>
+                <div class="div1">
+                <input type="text"  placeholder="From">
+                <input type="text"  placeholder="To">
+                <select name="" id="dd2">
+                    <option value="">GENERAL</option>
+                </select>
+                </div>
+                <div class="div2">
+                    <label for="">DD/MM/YYYY *</label>
+                <input type="date"   name="" id="">
+                <select name="" id="dd1">
+                    <option value="">All Classes</option>
+                </select>
+                </div>
+                <div class="div3">
+
+                <div><input type="checkbox"> <label for="">Divyaang Concession</label></div>
+               <div> <input type="checkbox" checked> <label for="">Flexible with Date</label></div>
+               <div> <input type="checkbox"> <label for="">Train with Available Berth</label></div>
+                </div>
+                <button>Search</button>
+            </form>
+        </div>
+        <div class="info">
+            <p>Information on COVID-19 Vaccination Programme</p>
+        </div>
+    </body>
+</html>

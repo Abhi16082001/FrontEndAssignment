@@ -1,0 +1,167 @@
+<!-- Task 3: Objective: Create a single-page portfolio showcasing your work.
+Instructions:
+1.    Create an HTML file named portfolio-single.html.
+2.    Use <div> for your name and a brief introduction.
+3.    Create sections for:
+
+•	 About Me: Brief bio and skills.
+•	 Portfolio: List of projects with images and descriptions.
+•	Contact: Basic contact information or a form.
+4.    Use anchor links (<a href="#section-id">) for navigation between sections.
+Outcome: Your single-page portfolio will effectively present your work and personal details. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio-Single</title>
+        <link rel="icon" href="img/serperior icon.jpg">
+    </head>
+    <body
+        style="background-color: lightgreen; border-radius: 10px; border:5px solid darkgreen; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; height: 1800px;">
+        <header>
+            <h1 align="center"> <u>My Portfolio </u></h1>
+            <nav
+                style="display: flex; flex-direction: row; justify-content: space-around; background-color: slateblue; border-radius: 25px; padding: 15px;">
+                <a
+                    style="background-color: aqua; padding-left: 15px;padding-right: 15px; border-radius: 5px;"
+                    href="#name">Intro</a>
+                <a
+                    style="background-color: aqua; padding-left: 15px;padding-right: 15px; border-radius: 5px;"
+                    href="#aboutme">About Me</a>
+                <a
+                    style="background-color: aqua; padding-left: 15px;padding-right: 15px; border-radius: 5px;"
+                    href="#projects">List of Projects</a>
+                <a
+                    style="background-color: aqua; padding-left: 15px;padding-right: 15px; border-radius: 5px;"
+                    href="#contact-details">Contact Details</a>
+                <a
+                    style="background-color: aqua; padding-left: 15px;padding-right: 15px; border-radius: 5px;"
+                    href="#contact-form">Contact Form</a>
+            </nav>
+        </header>
+
+        <div
+            style="border-radius: 25px; background-color: aquamarine; padding: 15px;">
+            <div id="name"><h3>Abhishek Rajput</h3></div>
+            <div id="intro">
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Aliquam sapiente ea nulla tempore quas ab illum maxime
+                    necessitatibus dicta cum, earum veniam blanditiis enim
+                    ducimus. Animi quos tenetur itaque quidem eligendi, facere
+                    quis recusandae nihil at velit exercitationem eaque
+                    doloribus fugiat veniam, assumenda debitis eum aliquam atque
+                    commodi odio similique?</p>
+            </div>
+
+        </div>
+        <div id="aboutme"
+            style="display:flex; flex-direction: column; border-radius: 25px ; background-color: aqua;">
+            <h3 style="padding: 15px;">About Me</h3>
+            <div
+                style="display: flex; flex-direction: row; justify-content: space-evenly;">
+                <div style="width: 65%;"><p>Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Repudiandae, aliquam
+                        voluptas culpa quam ducimus reiciendis unde ipsa
+                        distinctio voluptatem eum beatae dicta ut ad eveniet
+                        doloribus maiores obcaecati accusamus voluptatum magni
+                        quod debitis? Corporis quas veniam odio facere deleniti
+                        ut vero? Impedit, minima. Reprehenderit, quidem dolore!
+                        Asperiores iusto ipsam architecto.</p></div>
+                <div> <em>There are the Skills:</em>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                    </ul></div></div>
+        </div>
+        <div id="projects"
+            style="display: flex; flex-direction: column; justify-content: space-between ; height: 800px; background-color: blueviolet; border-radius: 25px; padding:15px;">
+            <h3>List Of Projects</h3>
+            <div
+                style="display: flex; flex-direction: row; border-radius: 20px; background-color: seagreen; padding: 15px;">
+                <img src="img/skeledirge.webp" alt="Battle-Image" width="200px"
+                    height="200px">
+                <div style="padding: 15px;"><p>Lorem ipsum dolor, sit amet
+                        consectetur adipisicing elit. Quo suscipit placeat
+                        corrupti molestiae, dignissimos atque quod repudiandae
+                        cumque aliquam non eos consequatur nemo optio
+                        praesentium et? Facilis, corrupti! Repellendus,
+                        totam?</p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Voluptatum, sint?</li>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Sunt, expedita quo explicabo doloribus
+                            similique itaque.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur
+                            adipisicing.</li>
+                    </ul></div>
+            </div>
+            <div
+                style="display: flex; flex-direction: row; border-radius: 20px; background-color: seagreen; padding: 15px;">
+                <div style="padding: 15px;"> <p>Lorem ipsum dolor, sit amet
+                        consectetur adipisicing elit. Quo suscipit placeat
+                        corrupti molestiae, dignissimos atque quod repudiandae
+                        cumque aliquam non eos consequatur nemo optio
+                        praesentium et? Facilis, corrupti! Repellendus,
+                        totam?</p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Voluptatum, sint?</li>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Sunt, expedita quo explicabo doloribus
+                            similique itaque.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur
+                            adipisicing.</li>
+                    </ul></div>
+                <img src="img/quaquaval.webp" alt="Battle-Image" width="200px"
+                    height="200px">
+            </div>
+            <div
+                style="display: flex; flex-direction: row; border-radius: 20px; background-color: seagreen; padding: 15px;">
+                <img src="img/dartrix.webp" alt="Battle-Image" width="200px"
+                    height="200px">
+                <div style="padding: 15px;"> <p>Lorem ipsum dolor, sit amet
+                        consectetur adipisicing elit. Quo suscipit placeat
+                        corrupti molestiae, dignissimos atque quod repudiandae
+                        cumque aliquam non eos consequatur nemo optio
+                        praesentium et? Facilis, corrupti! Repellendus,
+                        totam?</p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Voluptatum, sint?</li>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Sunt, expedita quo explicabo doloribus
+                            similique itaque.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur
+                            adipisicing.</li>
+                    </ul></div>
+            </div>
+        </div>
+
+        <div id="contact-details"
+            style="border-radius: 25px; background-color: burlywood; padding: 15px; ">
+            <h3>Contact Details : </h3>
+            <ul>
+                <li>Mobile Number.: 99XXXXXXXX</li>
+                <li>Email: abhishekrajput16082001@gmail.com</li>
+            </ul>
+        </div>
+        <div id="contact-form"
+            style="border-radius: 25px; background-color:teal; padding: 15px; ">
+            <h3 align="center">Contact Form: </h3>
+            <form
+                style="border:1px solid darkgreen; border-radius: 20px; padding: 15px; display: flex; flex-direction: column; justify-content: space-between; align-items: center;">
+                <div style="width:70%; padding: 5px;"><label>Name : </label>
+                    <input type="text" style="width: 90%;"> <br></div>
+                <div style="width:70%; padding: 5px;"> <label>Email : </label>
+                    <input type="email" style="width: 90%;"> <br></div>
+                <div style="width:70%; padding: 5px;"> <label>Message: </label>
+                    <input type="text" style="width: 90%;"> <br> </div>
+                <input type="submit" style="width: 25%;" value="Contact">
+            </form>
+        </div>
+    </body>
+</html>
