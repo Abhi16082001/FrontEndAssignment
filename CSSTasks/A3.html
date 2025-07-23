@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        html{
+            background-color: rgb(232, 226, 247);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+section,header{
+width: 70%;
+height: 90px;
+padding: 20px;
+margin: auto;
+background-color: white;
+margin-bottom: 15px;
+border-radius: 10px;
+}
+section{
+    display: flex;
+flex-direction: column;
+justify-content: space-around;
+gap:15px
+}
+header{ 
+    margin-top: 30px;
+    padding-top: 3px;
+    height: 180px;
+    border-top: 15px blueviolet solid;
+}
+form section:nth-child(7){
+    height: 120px;
+}
+#last{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#last span{
+    color: blueviolet;
+    position: relative;
+    left: 20px;
+}
+button{
+    background-color: blueviolet;
+    padding: 9px 25px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    position: relative;
+    right: 20px;   
+}
+
+footer{
+    width: 75%;
+    margin: auto;    
+}
+footer p{
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer p span{
+    font-weight: bold;
+    color: grey;
+    font-size: 23px;
+}
+header span,section span{
+    color: red;
+}
+input[type="text"],input[type="date"]{
+    border: none;
+    border-bottom:solid 1px grey
+}
+      </style>
+    </head>
+    <body>
+        <header id="header">
+            <h1 style="font-weight: lighter;">TALWAR SERVICE</h1>
+            <p>SERVICE REQUEST</p>
+            <hr style="color: green;">
+            <br>
+            <br>
+            <span>*Required</span>
+        </header>
+        <div>
+            <form>
+                <section>
+                    <label for>NAME<span>*</span></label>
+                    <input type="text" placeholder="Your answer">
+                </section>
+                <section>
+                    <label for>MOBILE NUMBER<span>*</span></label>
+                    <input type="text" placeholder="Your answer">
+                </section>
+                <section>
+                    <label for>ALTERNATE NUMBER<span>*</span></label>
+                    <input type="text" placeholder="Your answer">
+                </section>
+                <section>
+                    <label for>VEHICLE NUMBER<span>*</span></label>
+                    <input type="text" placeholder="Your answer">
+                </section>
+                <section>
+                    <label for>VEHICLE MODEL(SANTRO/I10
+                        ETC)<span>*</span></label>
+                    <input type="text" placeholder="Your answer">
+                </section>
+                <section>
+                    <label for>APPOINTMENT DATE<span>*</span></label>
+                    <label style="font-size: 12px; color: grey;" for>Date</label>
+                    <input type="date" style="width: 15%" placeholder="dd-mm-yyyy">
+                </section>
+                <section>
+                    <label for>PICKUP/APPOINTMENT<span>*</span></label>
+                    <div><input type="radio" name id> <label class="lbl"
+                            for>NEED PICK-UP</label></div>
+                    <div><input type="radio" name id> <label class="lbl"
+                            for>NEED APPOINTMENT</label></div>
+                    <div><input type="radio" name id> <label class="lbl"
+                            for>NEED TO SEND BREAK-DOWN</label></div>
+                </section>
+                <section>
+                    <label for>WORKSHOP LOCATION<span>*</span></label>
+                    <div><input type="radio" name id> <label class="lbl"
+                            for>TADBUND</label></div>
+                    <div><input type="radio" name id> <label class="lbl"
+                            for>TIRUMALGIRI-KANAJIGUDA</label> </div>
+                </section>
+                <section>
+                    <label for>ADDRESS FOR PICKUP<span>*</span></label>
+                    <input type="text" placeholder="Your answer">
+                </section>
+                <section>
+                    <label for>LAND MARK<span>*</span></label>
+                    <input type="text" placeholder="Your answer">
+                </section>
+                <section>
+                    <label for>REMARKS/INSTRUCTIONS</label>
+                    <input type="text" placeholder="Your answer">
+                </section>
+                <div id="last"> <button>Submit</button> <span>Clear form</span></div>
+
+            </form>
+        </div>
+        <footer>
+            <p> <span>Google</span> Forms</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html{
+                background-color: teal;
+            }
+.container{
+background-color: aliceblue;
+width: 55vw;
+height: 90vh;
+margin: auto;
+margin-top: 40px;
+}    
+p{
+font-size: small;
+padding: 15px;
+}
+p span{
+    font-size: large;
+    color:orange;
+    font-weight: bold;
+}
+form{
+   display:flex;
+   flex-direction: column; 
+   margin: auto;
+}
+form div{
+    width: 100%;
+ display: flex;
+    align-items: center;
+    gap: 15px;
+  margin-bottom: 20px;
+}
+input[type="text"],input[type="password"]{
+    width:35%;
+    padding: 7px;  
+    border: grey 1px solid ; 
+}
+select{
+    width: 37.5%;
+    padding: 8px;
+    border: grey 1px solid ;
+color: grey;
+}
+label{
+    text-align: right;
+    min-width: 30%;
+}
+
+input[type="checkbox"]{
+    display: inline-block;
+    margin-left: 200px;
+}
+form div:nth-last-child(2) label{
+    color:steelblue;
+    font-size:15px;
+}
+input[type="file"]::file-selector-button{
+    border-radius: 50px;
+    padding: 6px 12px;
+    background-color: steelblue;
+    border:0px;
+    color: white;
+    
+}
+
+button{
+    padding: 7px 55px;
+    color: white;
+    background-color: orange;
+    margin-left: 225px;
+    border:0px;
+    border-radius: 3px;
+
+}
+span{
+    color: red;
+}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div> <p> <span>Are you Looking for a Job ?</span>
+                    Register for free and apply for thousands of Job Interviews
+                    and Recruitment drives.</p></div>
+            <div>
+                <form action>
+
+                    <div><label for>Name<span>*</span> </label>
+                    <input type="text" placeholder="Name"></div>
+                    <div><label for>Email<span>*</span></label>
+                    <input type="text" placeholder="Email Address"></div>
+                    <div><label for>Password<span>*</span></label>
+                    <input type="password"
+                        placeholder="Password - min 6 characters"></div>
+                    <div><label for>Mobile<span>*</span></label>
+                    <input style="width: 22px; color: grey;" type="text" readonly value="+91">
+                    <input style="width: 27%;" type="text"></div>
+                    <div><label for>Current City<span>*</span></label>
+                    <select name id>
+                        <option value>Select City</option>
+                    </select></div>
+                    <div><label for>Qualification Details<span>*</span></label>
+                    <select name id>
+                        <option value>Select Courses</option>
+                    </select></div>
+                    <div><label for>Upload Resume</label>
+                    <input type="file" name id></div>
+                    <div><input type="checkbox"> <label for>I have read the Terms and
+                        Conditions</label></div>
+                  <div>  <button>Submit</button></div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
