@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+header img{
+    margin-left: 12%;
+}
+header{
+    background-color: lightgrey;
+    padding: 10px;
+    border-bottom: 2px lightsteelblue solid;
+}
+#ad{
+    padding: 10px;
+    padding-left: 11%;
+}
+#ad img{
+    border:1px grey solid;
+}
+#netbanking{
+    display: flex;
+    margin: auto;
+    margin-top: 2%;
+    padding: 0.8% 1.5%;
+    color: aliceblue;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+}
+
+#card{
+    background-color: lightsteelblue;
+    margin-left: 12%;
+    margin-top: 3%;
+    width: 20%;
+    height: 30vh;
+    padding: 20px;
+    border: none;
+    border-radius: 6px;
+    box-shadow:  0px 5px 3px lightgray;
+}
+#card div{
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    
+}
+#card img{
+    border-radius: 5px;
+}
+#card p{
+    text-align: center;
+    margin-top: 15%;
+      font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+#card button{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 20%;
+    padding: 8px 6px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: green;
+}
+
+
+#imp{
+    display: flex;
+    margin: auto;
+    margin-top: 5%;
+    padding: 10px 20px ;
+    border: none;
+    color: white;
+    background-color: darkblue;
+}
+#warning-bar{
+display: flex;
+flex-direction: row;
+margin: auto;
+margin-top: 3%;
+background-color: lightgray;
+padding: 15px;
+width: 85%;
+border: none;
+border-radius: 5px;
+box-shadow:  0px 5px 3px gray;
+font-size: small;
+margin-bottom: 5%;
+}
+#warning-bar span{
+    margin-left: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top:10px;
+}
+
+#widecard p{
+    display: inline;
+}
+#widecard p,span{
+    position: relative;
+    bottom: 5px;
+}
+
+#widecard{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 85%;
+    margin: auto;
+    margin-top: 2%;
+    background-color: lightgray;
+    padding: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    border: none;
+border-radius: 5px;
+box-shadow:  0px 5px 3px gray;
+}
+#widecard img{
+ border: none;
+ border-radius: 3px;
+}
+#widecard span{
+    color: blue;
+    text-decoration: underline;
+}
+#register{
+    margin-left: 2.5%;
+}
+footer{
+    width: 90%;
+    margin:auto;
+    margin-top: 5%;
+        font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer div{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+#pipe{
+    position: relative;
+    left: 10%;
+}
+        </style>
+
+    </head>
+    <body>
+
+        <header>
+            <img src="../img/HDB_BIG.png" width="15%" height="4.2%" alt>
+        </header>
+        <section id="ad">
+            <img src="../img/banner.jpeg" width="90%" height="200px" alt>
+        </section>
+        <button id="netbanking">CONTINUE TO NETBANKING</button>
+        <section id="card">
+            <div>
+                <img src="../img/wallet.png" width="40px" height="40px" alt>
+                <span>Instant Loan on Credit Card</span>
+            </div>
+            <p>You are just a few steps away</p>
+            <button>COMPLETE YOUR APPLICATION</button>
+        </section>
+        <button id="imp">Important Messages</button>
+        <section id="warning-bar">
+            <img src="../img/security.webp" width="40px" height="40px" alt>
+            <span>Do not share your internet banking username/password or
+                Credit/Debit Card number/CVV/OTP via email or over the
+                phone.</span>
+        </section>
+        <button id="netbanking">CONTINUE TO NETBANKING</button>
+        <section id="widecard">
+            <div>
+                <img src="../img/pin.png" width="25px" height="15px" alt>
+                <p> <span>Regenerate</span> your NetBanking IPIN(Password) on
+                    instantly by using one of the two methods : OTP send to your
+                    registered mobile number and Debit card detials OR OTP send
+                    to your registered mobile number and email id (not
+                    applicable for senior citizen customers).</p>
+            </div>
+            <div>
+                <p id="register"><span>Register</span> for NetBanking online
+                    instantly with the help of OTP send to your registered
+                    mobile number and Debit Card Details.</p>
+            </div>
+            <div>
+                <img src="../img/browser.png" width="20px" height="20px" alt>
+                <span>Browser Requirements for NetBanking and Website</span>
+            </div>
+            <div>
+                <img src="../img/brush.png" width="20px" height="20px" alt>
+                <span>Clearing Browser Cache</span>
+            </div>
+        </section>
+        <footer>
+            <div>
+                <span>Privacy</span>
+                <span>|</span>
+                <span id="pipe">|</span>
+                <span id="pipe">Website Usage Terms</span>
+            </div>
+            <span>© HDFC Bank Ltd. All rights reserved.</span>
+        </footer>
+
+    </body>
+</html>
