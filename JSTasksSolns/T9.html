@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Unit Converter</title>
+        <meta name="description" content="This is the Unit Convertor Task !">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            html{
+                background-color: black;
+            }
+h2{
+    display: inline;
+}
+h1{
+color: aliceblue;
+text-decoration: underline;
+}
+#container{
+    width: 50%;
+    height: 80vh;
+    margin: auto;
+    background-color: none;
+    display: flex;
+    flex-direction: column;
+    border: 2px steelblue solid;
+    box-shadow: 5px 5px blue;
+    border-radius: 10px;
+    color: cyan;
+}
+#ipt{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 60%;
+    gap:20px;
+}
+
+input{
+    width: 100%;
+    color: cyan;
+    height: 40px;
+    font-size: large;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid cyan;
+    background-color: transparent;
+
+}
+
+input::placeholder{
+    color: aliceblue;
+    text-align: center;
+    background-color: none;
+}
+
+button{
+    width: 30%;
+    margin: auto;
+    height: 15%;
+    border-radius: 10px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    color: aliceblue;
+    font-weight: bolder;
+    border: 2px solid cyan;
+    box-shadow: 3px 3px 3px lightcyan;
+}
+button:hover{
+    background-color: lightcyan;
+    color: blue;
+}
+#bmi{
+    border: 2px lightcyan solid;
+    border-radius: 5px;
+}
+        </style>
+    </head>
+    <body>
+
+<h1 align="center">BMI Calculator</h1>
+<div id="container">
+<div id="ipt">
+    <label for="">Enter Height :</label>
+    <input type="number" id="ht"  placeholder="Height [in meters]">
+    <label for="">Enter Weight :</label>
+    <input type="number" id="wt"  placeholder="Weight [in Kgs]">
+    <label for="">BMI : </label>
+    <input type="text" id="bmi" readonly placeholder="You will get your BMI here !!">  
+</div>
+<button id="spd" onclick="BMI()">Calculate BMI</button>
+
+
+</div>
+
+<script>
+    function BMI(){
+        let h=+ht.value;
+        let w=+wt.value;
+        let bmival=w/(h*h);
+        bmi.value=bmival;
+    }
+</script>
+   
+    </body>
+</html>

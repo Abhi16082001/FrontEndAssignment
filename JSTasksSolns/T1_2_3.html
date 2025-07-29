@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tasks-1,2,3</title>
+        <meta name="description" content="Solution for JS Assignment">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div>
+       <h1>Relational Operator Calculator</h1>
+        <label for="">Enter Number 1 : </label>
+        <input type="text" id="num1"><br><br>
+        <label for="">Enter Number 2 : </label>
+        <input type="text" id="num2"><br>
+        <br>
+        <button onclick="output.value=num1.value  <  num2.value;">&lt;</button>
+        <button onclick="output.value=num1.value  >  num2.value;">&gt;</button>
+        <button onclick="output.value=num1.value  ==  num2.value;">&Equal;</button>
+        <button onclick="output.value=num1.value  >=  num2.value;">&gt;=</button>
+        <button onclick="output.value=num1.value  <=  num2.value;">&lt;=</button>
+        <button onclick="output.value=num1.value  !=  num2.value;">!=</button>
+        <button onclick="output.value=num1.value  ===  num2.value;">===</button>
+        <button onclick="output.value=num1.value  !==  num2.value;">!==</button>
+<br><br>
+Output : 
+<input type="text" id="output" readonly>
+      </div>
+      <hr>
+        
+ <div>
+       <h1>Increment/Decrement Operator Calculator</h1>
+        <label for="">Enter Number : </label>
+        <input type="text" id="n"><br><br>
+        <button onclick="op.value= n.value++;">n++</button>
+        <button onclick="op.value= n.value--;">n--</button>
+        <button onclick="op.value= ++n.value;">++n</button>
+        <button onclick="op.value= --n.value;">--n</button>
+        <br><br>
+        Output : 
+<input type="text" id="op" readonly>
+</div>
+<hr>
+<h1>Swapping Two Values</h1>
+<input type="text" id="v1" placeholder="Enter First Value !">
+<button onclick="swap()"><img src="../img/swap.webp"  width="20px" height="20px" alt="Swap"></button>
+<input type="text" id="v2" placeholder="Enter Second Value !">
+
+    </body>
+
+    <script>
+
+        function swap(){
+            let temp;
+            temp=v1.value;
+            v1.value=v2.value;
+            v2.value=temp;
+        }
+    </script>
+</html>

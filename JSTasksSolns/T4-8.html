@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Unit Converter</title>
+        <meta name="description" content="This is the Unit Convertor Task !">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            html{
+                background-color: darkblue;
+            }
+h2{
+    display: inline;
+}
+h1{
+color: aliceblue;
+text-decoration: underline;
+}
+#container{
+    width: 60%;
+    height: 60vh;
+    margin: auto;
+    background-color: lightsteelblue;
+    display: flex;
+    flex-direction: column;
+    border: 2px steelblue solid;
+    box-shadow: 5px 5px blue;
+    border-radius: 10px;
+}
+#ipt{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#btns{
+    margin-top: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+input{
+    width: 30%;
+    height: 50%;
+    position: relative;
+    top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: steelblue;
+    color: aliceblue;
+
+}
+label{
+    position: relative;
+    top:30px;
+    right:20px;
+}
+input::placeholder{
+    color: aliceblue;
+    text-align: center;
+}
+#btns{
+    width: 100%;
+    margin: auto;
+}
+button{
+    width: 15%;
+    height: 200%;
+    border-radius: 10px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: slateblue;
+    color: aliceblue;
+    font-weight: bolder;
+    box-shadow: 3px 3px 3px blueviolet;
+}
+.btn-active{
+  box-shadow: 5px 5px 5px violet;
+  background-color: lightcyan;
+  color: blueviolet;
+}
+        </style>
+    </head>
+    <body>
+
+<h1 align="center">Unit Convertor</h1>
+<div id="container">
+<div id="ipt">
+    <input type="number" id="v1" oninput="convert1to2()" placeholder="First Value !">
+    <label id="u1" for="">Unit1</label>
+    <h2>&lt;=&gt;</h2>
+    <input type="number" id="v2" oninput="convert2to1()" placeholder="Second Value !">
+    <label id="u2" for="">Unit2</label>
+</div>
+<br>
+<div id="btns">
+<button id="spd" onclick="speed()">Speed</button>
+<button id="data" onclick="data()">Data</button>
+<button id="dst" onclick="distance()">Distance</button>
+<button id="time" onclick="time()">Time</button>
+<button id="volm" onclick="volume()">Volume</button>
+</div>
+</div>
+
+      <script>
+let choice="";
+function makeActive(id){
+    document.getElementById("data").className="";
+    document.getElementById("dst").className="";
+    document.getElementById("spd").className="";
+    document.getElementById("time").className="";
+    document.getElementById("volm").className="";
+     document.getElementById(id).className="btn-active";
+}
+function speed(){
+    makeActive("spd");
+    choice="speed";
+    document.getElementById("u1").innerHTML="m/s";
+    document.getElementById("u2").innerHTML="Km/h";
+}
+function data(){
+    makeActive("data");
+    choice="data";
+     document.getElementById("u1").innerHTML="KB";
+    document.getElementById("u2").innerHTML="GB";
+}
+function time(){
+    makeActive("time");
+    choice="time";
+     document.getElementById("u1").innerHTML="min";
+    document.getElementById("u2").innerHTML="days";
+}
+function distance(){
+    makeActive("dst");
+    choice="distance";
+     document.getElementById("u1").innerHTML="Km";
+    document.getElementById("u2").innerHTML="fts";
+}
+function volume(){
+    makeActive("volm");
+    choice="volume";
+     document.getElementById("u1").innerHTML="cubic m";
+    document.getElementById("u2").innerHTML="liters";
+}
+function convert1to2(){
+    let vl=v1.value;
+    if(choice=="speed"){
+        v2.value=vl*3.6;
+
+    }
+    if(choice=="data"){
+        v2.value= vl/1048576;
+        
+    }
+    if(choice=="time"){
+        v2.value=vl/1440;
+        
+    }
+    if(choice=="volume"){
+        v2.value= vl*1000;
+        
+    }
+    if(choice=="distance"){
+        v2.value= vl*3280.84;
+        
+    }
+
+}
+
+function convert2to1(){
+    let vl=v2.value;
+    if(choice=="speed"){
+        v1.value=vl/3.6;
+
+    }
+    if(choice=="data"){
+        v1.value=vl*1024*1024;
+        
+    }
+    if(choice=="time"){
+        v1.value=vl*1440;
+        
+    }
+    if(choice=="volume"){
+        v1.value= vl/1000;
+        
+    }
+    if(choice=="distance"){
+        v1.value= vl/3280.84;
+        
+    }
+
+}
+
+      </script>
+    </body>
+</html>
