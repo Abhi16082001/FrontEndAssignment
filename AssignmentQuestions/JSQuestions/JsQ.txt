@@ -1,0 +1,8 @@
+JS Assignments
+-----------------------------------------------------
+1. Relational operator calculator			(28-jul)
+2. Increment, Decrement operator calculator
+3. Swapping two value 
+--------------------------------------------
+4. to 8. Design any 5 unit convertors		(29-jul)
+9. Design BMI Calculator
