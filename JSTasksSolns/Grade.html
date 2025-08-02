@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Grade.css">
+    </head>
+    <body>
+        <h1>MARKS REPORT</h1>
+        <form action="" >
+          
+<div><label for="">Roll Number:</label>
+<input type="text" id="txtroll"></div>
+<div><label for="">Name:</label>
+<input type="text" id="txtname"></div>
+
+<div><label id="marks" for="">NOW ENTER MARKS BELOW :</label>
+</div>
+<div><label for="">HTML</label>
+<input type="text" id="txthtml"></div>
+<div><label for="">CSS</label>
+<input type="text" id="txtcss"></div>
+<div><label for="">JavaScript</label>
+<input type="text" id="txtjs"></div>
+<div><label for="">Bootstrap</label>
+<input type="text" id="txtbs"></div>
+<button onclick="Calculate()">GET RESULT</button>
+<div id="result">
+    <div> <input id="reslbl" type="text" readonly value="REPORT CARD OF STUDENT !!"></div>
+    <div> <label for="">Roll Number: </label> <input id="rollno" type="text" readonly> </div>
+    <div> <label for="">Name: </label> <input id="stunm" type="text" readonly> </div>
+    <div> <label for="">HTML: </label> <input id="html" type="text" readonly> </div>
+    <div> <label for="">CSS: </label> <input id="css" type="text" readonly> </div>
+    <div> <label for="">JavaScript: </label> <input id="js" type="text" readonly> </div>
+    <div> <label for="">Bootstrap: </label> <input id="bs" type="text" readonly> </div>
+   <div> <label for="">Total: </label> <input id="total" type="text" readonly> </div>
+   <div> <label for="">Average: </label><input id="avg" type="text" readonly> </div>
+   <div> <label for="">Grade: </label><input id="grade" type="text" readonly> </div>
+</div>
+        </form>
+
+<script src="Grade.js"></script>
+    </body>
+</html>

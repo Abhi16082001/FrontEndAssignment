@@ -1,9 +1,10 @@
 JS Assignments/Tasks
 -----------------------------------------------------
-1. Relational operator calculator			(28-jul)
+1. Relational operator calculator			(28-Jul)
 2. Increment, Decrement operator calculator
 3. Swapping two value 
 -----------------------------------------------------
-4. to 8. Design any 5 unit convertors		(29-jul)
+4. to 8. Design any 5 unit convertors		(29-Jul)
 9. Design BMI Calculator
 -----------------------------------------------------
+10. Desing a site to calculate the Grade of student (1-Aug)
