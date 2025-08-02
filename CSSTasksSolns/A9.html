@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+main{
+    width: 95%;
+    margin: auto;
+    border: solid 1px black;
+    border-radius: 5px;
+   margin-top: 5%;
+}
+#main2{
+     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+span{
+    font-size: small;
+}
+h2 span{
+    color: orange;
+}
+hr{
+    width: 95%;
+}
+img{
+    width: 100%;
+    height: 60%;
+}
+#fdiv{
+    padding: 0% 3%;
+}
+#sdiv p{
+    display: inline;
+}
+#sdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:5px;
+    margin-top: 5%;
+    margin-bottom: 8%;
+}
+button{
+    width: 100%;
+    border:solid 1px darkorange;
+    color: darkorange; 
+    background-color: white;
+    padding: 4%;
+    margin-bottom: 5%;
+    border-radius: 4px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    border: 1px grey solid;
+    width: 20%;
+    margin: 3% auto;
+border-radius: 4px;
+}
+h2{
+    margin: 2%;
+}
+
+        </style>
+    </head>
+    <body>
+        <main>
+        <h2>The most searched <span>Luxury</span> cars</h2>
+        <hr>
+        <div id="main2">
+        <section>
+            <img src="../img/car91.jpg" alt="">
+          <div id="fdiv">
+            <div id="sdiv">  <span>BMW X5</span>
+            <span>Rs. 79.90 - 98.50 Lakh*</span> </div>
+            <button>Check February Offer</button>
+            </div>
+        </section>
+
+            <section>
+            <img src="../img/car92.jpg" alt="">
+          <div id="fdiv">
+            <div id="sdiv">  <span>Audi A6</span>
+            <span>Rs. 61.60 - 66.26 Lakh*</span> </div>
+            <button>Check February Offer</button>
+            </div>
+        </section>
+
+
+            <section>
+            <img src="../img/car93.jpg" alt="">
+          <div id="fdiv">
+            <div id="sdiv">  <span>Land Rover Range Rover Velar</span>
+            <span>Rs. 89.41 Lakh*</span> </div>
+            <button>Check February Offer</button>
+            </div>
+        </section>
+
+
+            <section>
+            <img src="../img/car94.jpg" alt="">
+          <div id="fdiv">
+            <div id="sdiv">  <span>Mercedes-BenZ S-Class</span>
+            <span>Rs. 1.65 - 1.74 Cr*</span> </div>
+            <button>Check February Offer</button>
+            </div>
+        </section>
+        </div>
+        </main>
+    </body>
+</html>

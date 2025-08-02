@@ -1,0 +1,91 @@
+html{
+    background-color: black;
+    color:azure;
+    font-family: cursive;
+}
+h1{
+    background-color: rgba(0, 0, 255, 0.306);
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    
+}
+form{
+width: 40%;;
+margin: auto;
+margin-top: 1%;
+display: flex;
+flex-direction: column;
+background-color: skyblue;
+color:darkblue;
+padding: 4%;
+padding-bottom: 2%;
+border-radius: 15px;
+box-shadow: 5px 5px 5px;
+gap:10px;
+}
+form div{
+    display: flex;
+    flex-direction: row;
+    
+}
+form div label{
+    width: 30%;
+}
+button{
+    padding: 2%;
+    margin: 2%;
+    border-radius: 50px;
+    border: none;
+    background-color: blue;
+    color: lightblue;
+    font-family: cursive;
+}
+button:hover{
+    background-color: dodgerblue;
+    transform: scale(1.05);
+    transition-duration: 500ms;
+}
+#bill{
+    display: none;
+    flex-direction: column;
+    gap:10px;
+    background-color: lightsteelblue;
+    padding: 2%;
+    border-radius: 5px;
+    color:darkslateblue;
+    
+}
+#bill div label{
+    width: 40%;
+}
+input[type="text"]{
+    border: none;
+    outline: none;
+    padding: 1% 6%;
+    width: 80%;
+    background-color: lightblue;
+    border-radius: 50px;
+    border: darkblue 2px solid;
+font-size: medium;
+color: darkslateblue;
+}
+input[type="text"]:focus{
+    color: darkslateblue;
+    
+}
+#bill input{
+    border:none;
+    background-color: lightblue;
+    color: slateblue;
+    font-family: cursive;
+}
+#billlbl{
+    width: 100%;
+    text-align: center;
+    background:none;
+    
+}
+#totlbl{
+    font-weight: bolder;
+    color:darkslateblue;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+<h1>Factors of Number</h1>
+<label for="">Enter a number: </label>
+<input id="num" type="text">
+<br> <br>
+<button onclick="factors()">Get Factors</button> 
+<br> <br>
+<output id="fac">These are the Factors of </output>
+<hr>
+<h1>Unique Number Check </h1>
+<label for="">Enter a number: </label>
+<input id="num2" type="text">
+<br> <br>
+<button onclick="unique()">Check for Unique Number</button> 
+<br> <br>
+<output id="unq">Result : </output>
+<hr>
+<h1>Reverse the Number </h1>
+<label for="">Enter a number: </label>
+<input id="num3" type="text">
+<br> <br>
+<button onclick="reverse()">Reverse</button> 
+<br> <br>
+<output id="rvs">Result : </output>
+
+<hr>
+<h1>Check for Unique Digits </h1>
+<label for="">Enter a number: </label>
+<input id="num4" type="text">
+<br> <br>
+<button onclick="udigit()">Check for Unique Digits</button> 
+<br> <br>
+<output id="udgt">Result : </output>
+    <script>
+
+function factors(){
+let n=+num.value;
+let factors="";
+for(let i=2;i<=n/2;i++){
+    if(n%i===0){ factors+=i+" ";}
+}
+let fac=document.getElementById("fac");
+fac.innerHTML=`Factors of ${n} are ${factors==""?"0 and 1":factors} .`;
+}
+
+
+function unique(){
+
+let num=+num2.value;
+let n=num;
+let d=0;
+while(n>0){
+ d=Math.trunc(d*10+ n%10);
+ n=Math.trunc(n/10);
+}
+let uq=d*9;
+unq.innerHTML=`Number ${num} is ${uq===num?"":"not"} Unique !`;
+
+}
+
+function reverse(){
+let n=+num3.value;
+let num=n;
+let d=0;
+while(n>0){
+ d=Math.trunc(d*10+ n%10);
+ n=Math.trunc(n/10);
+}
+rvs.innerHTML=`Reverse of Number ${num} is ${d} !`;
+}
+
+
+function udigit(){
+let digits=[];
+let n=num4.value;
+let unqness=true;
+for(let i=0;i<n.length;i++){
+    if(digits.includes(+n[i])){unqness=false; break;}
+    digits.push(+n[i]);
+}
+udgt.innerHTML=`Number ${n} contains ${unqness?"unique":"duplicate"} digits !`;
+}
+    </script>
+    </body>
+</html>
