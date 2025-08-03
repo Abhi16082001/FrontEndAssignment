@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+body{
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px 3%;
+}
+section{
+    height: 25vh;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap:70px;
+padding: 1% 0%;
+border-radius: 5px;
+}
+section img{
+    width: 45px;
+    height: 40px;
+}
+header img{
+    width: 50px;
+    height: 50px;
+}
+
+button{
+    color: dodgerblue;
+    padding: 3% 6%;
+    border: 1px dodgerblue solid;
+    border-radius: 20px;
+    font-size: x-small;
+    background-color: white;
+    width: 80%;
+    margin: auto;
+
+}
+span{
+    display: block;
+}
+.cntry{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    margin-top: 5%;
+}
+#dtls{
+    text-align: center;
+}
+
+.dtl{
+    font-size: x-small;
+    color: darkslategrey;
+}
+
+#time{
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+#date{
+    font-size: small;
+    color: darkslategray;
+}
+#dtls,#dtls div{
+    display: flex;
+    flex-direction: column;
+}
+#dtls{
+    gap:15px;
+}
+
+hr{
+    color: black;
+    width: 100%;
+}
+.plus{
+    border: solid black 1px;
+    border-radius: 20px;
+    padding:1px 5px;
+    display: inline-block;
+    width: 25% ;
+    align-self: center;
+    border-color: grey;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    width: 100%;
+    color: white;
+    margin-bottom: 2%;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:10px;  
+}
+.gale button{
+width: 100%;
+}
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="../img/ICC.jpg" alt>
+            <h2>ICC Upcoming Match Schedule</h2>
+        </header>
+
+        <main>
+            <section>
+                <div class="cntry">
+                    <img src="../img/PAK.jpg" alt>
+                    <span>PAK</span>
+                    <span class="plus">+</span>
+                </div>
+                <div id="dtls">
+                    <span id="date">25 Jan</span>
+                    <div>
+                        <span id="time">10:00 am</span>
+                        <span class="dtl">Multan Cricke Stadium, Multan</span>
+                        <hr>
+                        <span class="dtl">West Indies in Pakistan, 2 Test
+                            Series, 2025</span>
+                    </div>
+                    <button>See more game details</button>
+                </div>
+                <div class="cntry">
+                    <img src="../img/WI.jpg" alt>
+                    <span>WI</span>
+                    <span class="plus">+</span>
+                </div>
+
+            </section>
+
+            <section>
+                <div class="cntry">
+                    <img src="../img/IND.jpg" alt>
+                    <span>IND</span>
+                    <span class="plus">+</span>
+                </div>
+                <div id="dtls">
+                    <span id="date">25 Jan</span>
+                    <div>
+                        <span id="time">7:00 pm</span>
+                        <span class="dtl">MA Chidambaram Stadium, Chennai</span>
+                        <hr>
+                        <span class="dtl">England in India, 5 T20I Series,
+                            2025</span>
+                    </div>
+                    <button>See more game details</button>
+                </div>
+                <div class="cntry">
+                    <img src="../img/ENG.jpg" alt>
+                    <span>ENG</span>
+                    <span class="plus">+</span>
+                </div>
+
+            </section>
+
+            <section>
+                <div class="cntry">
+                    <img src="../img/IND.jpg" alt>
+                    <span>IND</span>
+                    <span class="plus">+</span>
+                </div>
+                <div id="dtls">
+                    <span id="date">28 Jan</span>
+                    <div>
+                        <span id="time">7:00 pm</span>
+                        <span class="dtl">Niranjan Shah Stadium, Rajkot</span>
+                        <hr>
+                        <span class="dtl">England in India, 5 T20I Series,
+                            2025</span>
+                    </div>
+                    <button>See more game details</button>
+                </div>
+                <div class="cntry">
+                    <img src="../img/ENG.jpg" alt>
+                    <span>ENG</span>
+                    <span class="plus">+</span>
+                </div>
+
+            </section>
+
+            <section>
+                <div class="cntry">
+                    <img src="../img/SL.jpg" alt>
+                    <span>SL</span>
+                    <span class="plus">+</span>
+                </div>
+                <div id="dtls" class="gale">
+                    <span id="date">29 Jan</span>
+                    <div>
+                        <span id="time">10:00 am</span>
+                        <span class="dtl">Galle International Stadium,
+                            Galle</span>
+                        <hr>
+                        <span class="dtl">Warne-Muralitharan Trophy, 2025</span>
+                    </div>
+                    <button>See more game details</button>
+                </div>
+                <div class="cntry">
+                    <img src="../img/AUS.jpg" alt>
+                    <span>AUS</span>
+                    <span class="plus">+</span>
+                </div>
+
+            </section>
+
+            <section>
+                <div class="cntry">
+                    <img src="../img/IND.jpg" alt>
+                    <span>IND</span>
+                    <span class="plus">+</span>
+                </div>
+                <div id="dtls">
+                    <span id="date">31 Jan</span>
+                    <div>
+                        <span id="time">7:00 pm</span>
+                        <span class="dtl">Maharashtra Cricket Association
+                            Stadium, Pune</span>
+                        <hr>
+                        <span class="dtl">England in India, 5 T20I Series,
+                            2025</span>
+                    </div>
+                    <button>See more game details</button>
+                </div>
+                <div class="cntry">
+                    <img src="../img/ENG.jpg" alt>
+                    <span>ENG</span>
+                    <span class="plus">+</span>
+                </div>
+
+            </section>
+
+            <section>
+                <div class="cntry">
+                    <img src="../img/IND.jpg" alt>
+                    <span>IND</span>
+                    <span class="plus">+</span>
+                </div>
+                <div id="dtls">
+                    <span id="date">2 Feb</span>
+                    <div>
+                        <span id="time">7:00 pm</span>
+                        <span class="dtl">Wankhede Stadium, Mumbai</span>
+                        <hr>
+                        <span class="dtl">England in India, 5 T20I Series,
+                            2025</span>
+                    </div>
+                    <button>See more game details</button>
+                </div>
+                <div class="cntry">
+                    <img src="../img/ENG.jpg" alt>
+                    <span>ENG</span>
+                    <span class="plus">+</span>
+                </div>
+
+            </section>
+
+        </main>
+    </body>
+</html>

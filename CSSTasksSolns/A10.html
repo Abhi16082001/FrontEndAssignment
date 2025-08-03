@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        color:white;
+        font-weight: bolder;
+    }
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+section{
+    width: 20%;
+    height: 50vh;
+    padding-top: 1%;
+    border-radius: 10px;
+    text-align: end;
+}
+#sec1{ 
+    background-image: url("../img/bgcar1.jpg");
+    background-size:contain;
+}
+#sec2{ 
+    background-image: url("../img/bgcar2.jpg");
+    background-size:contain;
+}
+#sec3{ 
+    background-image: url("../img/bgcar3.jpg");
+    background-size:contain;
+}
+#sec4{ 
+    background-image: url("../img/bgcar4.jpg");
+    background-size:contain;
+}
+#contact{
+    text-align: center;
+}
+#carname,#prc{
+    background-color: blue;
+    padding:2%;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+#carname{
+    margin-right: 10%;
+}
+#prc{
+    border: white solid 2px;
+}
+#empty{
+    width: 100%;
+    height: 70%;
+}
+#price,#features,#download{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+#features img{
+    width: 15px;
+    height:15px;
+    border-radius: 3px;
+}
+#features span{
+    font-size: small;
+}
+#contact span{
+    font-weight: normal;
+}
+#contact img{
+    width: 20px;
+    height: 20px;
+    border-radius: 3px
+}
+#contact{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+#contact div{
+    padding: 1% 3%;
+}
+#whatsapp{
+    background-color: rgb(60, 255, 0);
+    width: 100%;
+
+}
+#call{
+    background-color: rgb(0, 145, 255);
+    width: 100%;
+  
+}
+#download{
+   background:linear-gradient(to right,darkblue,darkblue,lightblue);
+   padding: 2% 0%;
+   border-bottom-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+}
+#download img{
+    width: 20px;
+    height: 20px;
+}
+#download div{
+   position:relative;
+   right:10px;
+}
+h1{
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+}
+input{
+    background-color: lightgrey;
+    border: none;
+    padding: 1%;
+    width: 38%;
+    font-size: medium;
+    border-radius: 20px;
+    margin-left: 30%;
+    margin-bottom: 4%;
+}
+input::placeholder{
+    color: black;
+}
+#book{
+    font-size: larger;
+}
+#download div span{
+    font-size: x-large;
+}
+        </style>
+    </head>
+    <body>
+
+        <h1>Explore Our Cars In Hyderabad</h1>
+        <input type="text" placeholder="Search for your favourite car">
+        <main>
+
+            <section id="sec1">
+
+                <span id="carname">Maruthi Alto</span>
+                <div id="empty"></div>
+                <div id="price">
+                    <span id="book">Book Now</span>
+                    <span id="prc">Rs.1488/Day</span>
+                </div>
+                <div id="features">
+                    <div>
+                        <img src="../img/petrol2.jpg" alt>
+                        <span>Petrol</span>
+                    </div>
+                    <span>|</span>
+                    <div>
+                        <img src="../img/seat2.jpg" alt>
+                        <span>5 Seater</span>
+                    </div>
+                    <span>|</span>
+                    <div>
+                        <img src="../img/manual2.jpg" alt>
+                        <span>Automatic</span>
+                    </div>
+                </div>
+
+                <div id="contact">
+                    <div id="whatsapp">
+                        <img src="../img/whatsapp.jpg" alt>
+                        <span>WhatsApp</span>
+                    </div>
+                    <div id="call">
+                        <img src="../img/call.jpg" alt>
+                        <span>Call Us</span>
+                    </div>
+                </div>
+
+                <div id="download">
+                    <div>
+                        <img src="../img/playstore.jpg" alt>
+                        <span>/</span>
+                        <img src="../img/appstore.jpg" alt>
+                    </div>
+                    <span>Download App</span>
+                </div>
+
+            </section>
+
+            <section id="sec2">
+
+                <span id="carname">Maruthi Celerio</span>
+                <div id="empty"></div>
+                <div id="price">
+                    <span id="book">Book Now</span>
+                    <span id="prc">Rs.1488/Day</span>
+                </div>
+                <div id="features">
+                    <div>
+                        <img src="../img/petrol2.jpg" alt>
+                        <span>Petrol</span>
+                    </div>
+                    <span>|</span>
+                    <div>
+                        <img src="../img/seat2.jpg" alt>
+                        <span>5 Seater</span>
+                    </div>
+                    <span>|</span>
+                    <div>
+                        <img src="../img/manual2.jpg" alt>
+                        <span>Manual</span>
+                    </div>
+                </div>
+
+                <div id="contact">
+                    <div id="whatsapp">
+                        <img src="../img/whatsapp.jpg" alt>
+                        <span>WhatsApp</span>
+                    </div>
+                    <div id="call">
+                        <img src="../img/call.jpg" alt>
+                        <span>Call Us</span>
+                    </div>
+                </div>
+
+                <div id="download">
+                    <div>
+                        <img src="../img/playstore.jpg" alt>
+                        <span>/</span>
+                        <img src="../img/appstore.jpg" alt>
+                    </div>
+                    <span>Download App</span>
+                </div>
+
+            </section>
+
+            <section id="sec3">
+
+                <span id="carname">Hyundai Santro</span>
+                <div id="empty"></div>
+                <div id="price">
+                    <span id="book">Book Now</span>
+                    <span id="prc">Rs.1488/Day</span>
+                </div>
+                <div id="features">
+                    <div>
+                        <img src="../img/petrol2.jpg" alt>
+                        <span>Petrol</span>
+                    </div>
+                    <span>|</span>
+                    <div>
+                        <img src="../img/seat2.jpg" alt>
+                        <span>5 Seater</span>
+                    </div>
+                    <span>|</span>
+                    <div>
+                        <img src="../img/manual2.jpg" alt>
+                        <span>Manual</span>
+                    </div>
+                </div>
+
+                <div id="contact">
+                    <div id="whatsapp">
+                        <img src="../img/whatsapp.jpg" alt>
+                        <span>WhatsApp</span>
+                    </div>
+                    <div id="call">
+                        <img src="../img/call.jpg" alt>
+                        <span>Call Us</span>
+                    </div>
+                </div>
+
+                <div id="download">
+                    <div>
+                        <img src="../img/playstore.jpg" alt>
+                        <span>/</span>
+                        <img src="../img/appstore.jpg" alt>
+                    </div>
+                    <span>Download App</span>
+                </div>
+
+            </section>
+
+            <section id="sec4">
+
+                <span id="carname">Maruthi Wagon R</span>
+                <div id="empty"></div>
+                <div id="price">
+                    <span id="book">Book Now</span>
+                    <span id="prc">Rs.1488/Day</span>
+                </div>
+                <div id="features">
+                    <div>
+                        <img src="../img/petrol2.jpg" alt>
+                        <span>Petrol</span>
+                    </div>
+                    <span>|</span>
+                    <div>
+                        <img src="../img/seat2.jpg" alt>
+                        <span>5 Seater</span>
+                    </div>
+                    <span>|</span>
+                    <div>
+                        <img src="../img/manual2.jpg" alt>
+                        <span>Manual</span>
+                    </div>
+                </div>
+
+                <div id="contact">
+                    <div id="whatsapp">
+                        <img src="../img/whatsapp.jpg" alt>
+                        <span>WhatsApp</span>
+                    </div>
+                    <div id="call">
+                        <img src="../img/call.jpg" alt>
+                        <span>Call Us</span>
+                    </div>
+                </div>
+
+                <div id="download">
+                    <div>
+                        <img src="../img/playstore.jpg" alt>
+                        <span>/</span>
+                        <img src="../img/appstore.jpg" alt>
+                    </div>
+                    <span>Download App</span>
+                </div>
+
+            </section>
+
+        </main>
+    </body>
+</html>

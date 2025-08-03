@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 3% 5%;
+}
+section{
+padding: 10% 20%;
+display: flex;
+flex-direction: column;
+gap:5rem;
+
+}
+
+#sedan{
+    background-color: rgb(255, 136, 0);
+    border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+}
+#suv{
+    background-color: teal;
+}
+#lux{
+    background-color: rgb(2, 94, 73);
+   border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+img{
+    width: 60px;
+    height: 30px;
+    position: relative;
+    bottom: 0.8rem;
+    right: 2rem;
+    border-radius: 10px;
+}
+h2{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight:lighter;
+    
+}
+
+.empty{
+    display: inline-block;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 30px;
+}
+#sdempty{
+    background-color: rgb(147, 69, 9);
+}
+#suvempty{
+    background-color: rgb(3, 81, 81)
+}
+#luxempty{
+    background-color:  rgb(2, 71, 55);
+}
+footer{
+    margin-top: 3%;
+}
+footer p{
+    
+    bottom: 40px;
+    color: black;
+    text-align: center;
+    
+}
+footer p span{
+    color: blue;
+    text-decoration: underline;
+}
+button{
+    padding: 6% 10%;
+    border-radius: 20px;
+    border: solid white 2px;
+    background-color: transparent;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+width: 80%;
+}
+#fcont{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(3,25%);
+    justify-content: center;
+    grid-template-rows: 78vh;
+
+}
+
+
+</style>
+
+    </head>
+    <body>
+        <main>
+
+            <section id="sedan">
+                <div id="fcont">
+                    <div>
+                        <div class="empty" id="sdempty"> </div> <img
+                            src="../img/sedan.jpg" alt>
+                    </div>
+                    <h2>SEDANS</h2>
+                    <div>
+                        <p>Choose a sedan for its affordibility and excellent
+                            fuel economy. Ideal for cruising in the city or on
+                            your next road trip.
+                        </p>
+                    </div>
+                </div>
+                <button>Learn More</button>
+
+            </section>
+
+            <section id="suv">
+                <div id="fcont">
+                    <div>
+                        <div class="empty" id="suvempty"> </div> <img
+                            src="../img/suv.jpg" alt>
+                    </div>
+                    <h2>SUVS</h2>
+                    <div>
+                        <p>Take an SUV for its spacious interior, power, and
+                            versatility. Perfect for you next family vacation
+                            and off-road adventure.
+                        </p>
+                    </div>
+                </div>
+                <button>Learn More</button>
+
+            </section>
+
+            <section id="lux">
+                <div id="fcont">
+                    <div>
+                        <div class="empty" id="luxempty"> </div> <img
+                            src="../img/luxury.jpg" alt>
+                    </div>
+                    <h2>LUXURY</h2>
+                    <div>
+                        <p>Cruise in the best car without the bloated prices.
+                            Enjoy the enhanced comfort of an luxury rental and
+                            arrive in style.
+                        </p>
+                    </div>
+                </div>
+                <button>Learn More</button>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <p>
+                Challenge by <span>Frontend Developer</span>. Coded by
+                <span>Siva Kumar Y</span>
+            </p>
+        </footer>
+    </body>
+</html>
