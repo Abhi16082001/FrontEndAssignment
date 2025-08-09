@@ -10,6 +10,12 @@ JS Assignments/Tasks
 10. Design a site to calculate the Grade of student (1-Aug)
 -------------------------------------------------------------------------------
 11. Design a Hotel Bill Calculator (2-Aug) 
-12. Print Factors of given Number (2-Aug)
-13. Write a Program to check whether a given number unique or not (2-Aug)
-14. Write a Program to Reverse the give number (2-Aug)
+12. Print Factors of given Number 
+13. Write a Program to check whether a given number unique or not 
+14. Write a Program to Reverse the give number 
+-------------------------------------------------------------------------------
+15. Create 5 buttons for array operations using built-in functions (9-Aug)
+16. Merge any two arrays
+17. Find Min element in array
+18. Find Max element in array
+19. Print three numbers 1,2,3 using symbols [use for loops and if else only]

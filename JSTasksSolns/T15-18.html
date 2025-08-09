@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+<h1>Array Operations !!</h1>
+<br>
+<label for="">Enter Element : </label> &nbsp; &nbsp; &nbsp;
+<input type="text" id="ele">
+<br>
+<br>
+<button onclick="Add()">Add Element</button>
+<button onclick="View()">View Array</button>
+<br><br>
+<label for="">Output : </label> <Output id="out" style="font-weight: bolder;"></Output>
+<p><strong>5 Operations </strong></p>
+<button onclick="Search()">Search Element</button>
+<button onclick="Reverse()">Reverse Array</button>
+<button onclick="Sort()">Sort Array</button>
+<button onclick="Update()">Update Element</button>
+<button onclick="Delete()">Delete Element</button>
+<p><strong>Min and Max Element </strong></p>
+<button onclick="Min()">Minimum</button>
+<button onclick="Max()">Maximun</button>
+<p><strong>Merging Two Arrays</strong></p>
+<label for="">Enter Element for Array 1 : </label> &nbsp; &nbsp; &nbsp;
+<input type="text" id="ele1">
+<br>
+<br>
+<button onclick="Add1()">Add Element</button>
+<button onclick="View1()">View Array</button> <br><br>
+<label for="">Array 1: </label> <Output id="out1" style="font-weight: bolder;"></Output> 
+<br><br>
+<label for="">Enter Element for Array 2 : </label> &nbsp; &nbsp; &nbsp;
+<input type="text" id="ele2">
+<br>
+<br>
+<button onclick="Add2()">Add Element</button>
+<button onclick="View2()">View Array</button> <br><br>
+<label for="">Array 2: </label> <Output id="out2" style="font-weight: bolder;"></Output> 
+<br><br>
+<button onclick="Merge()">Merge</button> <br><br>
+<label for="">Merged Array : </label> <Output id="outm" style="font-weight: bolder;"></Output> 
+
+        <script>
+            const arr=[];
+            const A1=[],A2=[];
+            let ele=document.getElementById("ele");
+            let ele1=document.getElementById("ele1");
+            let ele2=document.getElementById("ele2");
+            let out=document.getElementById("out");
+            let out1=document.getElementById("out1");
+            let out2=document.getElementById("out2");
+            let outm=document.getElementById("outm");
+function Add(){
+    let e=+ele.value;
+    arr.push(+e);
+    ele.value="";
+    ele.focus();
+}
+function View(){
+    out.value=arr;
+     ele.value="";
+    ele.focus();
+}
+function Search(){
+    let e=+ele.value;
+    let res=arr.indexOf(e);
+    out.value=res>=0?`Element found at index ${res}`:"Element not found";
+     ele.value="";
+    ele.focus();
+}
+function Reverse(){
+    arr.reverse();
+    out.value="Array Reversed !!";
+     ele.value="";
+    ele.focus();
+}
+function Sort(){
+    arr.sort();
+    out.value="Array Sorted !!";
+     ele.value="";
+    ele.focus();
+}
+function Update(){
+    let e=+ele.value;
+    let i=prompt("Which index you want to update ?");
+    arr.splice(i,1,e);
+    out.value="Array Updated !";
+     ele.value="";
+    ele.focus();
+}
+function Delete(){
+    let e=+ele.value;
+    let i=arr.indexOf(e);
+    if(i<0) out.value="Element not found to delete !";
+    else {
+        arr.splice(i,1);
+        out.value="Element Deleted Successfully !!";
+    }
+     ele.value="";
+    ele.focus();
+}
+function Add1(){
+    let e=+ele1.value;
+    A1.push(e);
+    ele1.value="";
+    ele1.focus();
+}
+function Add2(){
+    let e=+ele2.value;
+    A2.push(e);
+    ele2.value="";
+    ele2.focus();
+}
+function View1(){
+    out1.value=A1;
+     ele1.value="";
+    ele1.focus();
+}
+function View2(){
+    out2.value=A2;
+     ele2.value="";
+    ele2.focus();
+}
+function Merge(){
+    let marr= [...A1,...A2];
+    outm.value=marr;
+}
+function Min(){
+    arr.sort((a,b)=> (a-b));
+    out.value=`Minimum Element is : ${arr[0]}`;
+}
+function Max(){
+    arr.sort((a,b)=> (a-b));
+    out.value=`Maximum Element is : ${arr[arr.length-1]}`;
+}
+
+        </script>
+    </body>
+</html>

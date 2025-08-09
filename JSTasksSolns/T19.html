@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+     <button onclick="P1()">Print 1</button> &nbsp; &nbsp; &nbsp;
+     <button onclick="P2()">Print 2</button> &nbsp; &nbsp; &nbsp;
+     <button onclick="P3()">Print 3</button> 
+
+        <script>
+function P1(){
+    let l=10;
+    let w=Math.floor(l/2);
+    w=w%2==0?w+1:w;
+for(let i=0;i<l;i++){
+for(let j=0;j<w;j++){
+   if(j==Math.floor(w/2) && i<l-1) document.write("*");
+   if(j<Math.floor(w/2) && i==1) document.write("*");
+   if(i==l-1) document.write("*");
+   if(j!=Math.floor(w/2) && i!=l-1 && !(j<Math.floor(w/2) && i==1)) document.write(`&nbsp;&nbsp;`);
+}
+document.write(`<br>`);
+}
+
+}
+function P2(){
+let n=5;
+let l=2*n+1, w=Math.ceil(l/1.25);
+let mid=Math.floor(l/2);
+for(let i =0;i<l;i++){
+    for(let j=0;j<w;j++){
+        if(i==0 || i==mid || i==l-1) document.write("*");
+        if(i<mid && i>0 && j==w-1) document.write("*");
+        if(i>mid && i<l-1 && j==0) document.write("*");
+        if(i>0 && i<l-1 && ((i<mid && j!=w-1) || ( i>mid && j!=0))) document.write(`&nbsp;&nbsp;`);
+    }
+    document.write(`<br>`);
+}    
+}
+
+function P3(){
+
+    let n=5;
+let l=2*n+1, w=Math.ceil(l/1.25);
+let mid=Math.floor(l/2);
+for(let i =0;i<l;i++){
+    for(let j=0;j<w;j++){
+        if(i==0 || i==mid || i==l-1) document.write("*");
+        if(i!=mid && i>0 && i<l-1 && j==w-1) document.write("*");
+        if(i>0 && i<l-1 && i!=mid && j!=w-1)  document.write(`&nbsp;&nbsp;`);
+    }
+    document.write(`<br>`);
+}  
+    
+}
+
+        </script>
+    </body>
+</html>
